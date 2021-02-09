@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Facebook - выполните вход или зарегистрируйтесь</title>
+        <style>
+            #facebook{
+                position: absolute;
+                top: 170px;
+                left: 240px;
+                width: 300px;
+                
+            }
+            #what-for{
+                font-size: 28px;
+                font-family: "Arial", sans-serif; 
+                margin-top: 270px;
+                margin-left: 260px;
+                padding-right: 800px;
+            }
+            body{
+                background-color: rgb(245,245,245);
+                
+            }
+            input[type=text]{
+                width: 364px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                border-style: 1px solid;
+                box-sizing: border-box;
+                position: absolute;
+                top: 150px;
+                right: 300px;
+                font-family: sans-serif;
+                font-size: 17px;
+                border-radius: 5px;
+
+                
+            }
+            input[type=password]{
+                width: 364px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                position: absolute;
+                top: 220px;
+                right: 300px;
+                font-size: 17px;
+                border-radius: 5px;
+            }
+            #square{
+                width: 400px;
+                height: 360px;
+                background: white;
+                position: absolute;
+                top: 140px;
+                right: 280px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(194, 187, 187, 0.5);
+            }
+            #anothersq{
+                width: 1510px;
+                height: 160px;
+                background: white;
+                position: absolute;
+                top: 630px;
+                
+            }
+            #polosa{
+                width: 355px;
+                height: 0.5px;
+                background-color: rgb(196, 190, 190);
+                position: absolute;
+                top: 400px;
+                right: 310px;
+            }
+            .languages {
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+                position: absolute;
+                left: 272px;
+                bottom: 50px;
+                font-size: 13px;
+            }
+
+           
+            .things1{
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+                position: absolute;
+                left: 300px;
+                bottom: 30px;
+                font-size: 13px;
+            }
+            
+            .things2{
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+                position: absolute;
+                left: 300px;
+                bottom: 1px;
+                font-size: 13px;
+            }
+            
+            .things3{
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+                position: absolute;
+                left: 300px;
+                bottom: -20px;
+                font-size: 13px;
+            }
+            .fb{
+                z-index: 1;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <img id = "facebook" src = "https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt = "facebook">
+        <p id = "what-for">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        <div id = "square">
+        </div>
+        <div id="anothersq"></div>
+        <div id = "polosa"></div>
+        <div class = "form">
+        <form>
+            <input type="text" placeholder="Электронный адрес или номер телефона">
+            <input type="password" placeholder="Пароль">
+        </form>
+        <a href = "?"><button style = "background-color: rgb(0, 128, 255); color: white; border: none; padding: 17px 157px; position: absolute; right: 300px; top: 280px; margin: 8px 0;font-size: 20px; font-weight: bold; border-radius: 5px;">Вход</button></a>
+        <a href = "?" style="color:rgb(0, 128, 255); position: absolute; right: 420px; bottom: 350px; text-decoration: none; font-family: sans-serif; font-size: 15px;">Забыли пароль?</a>
+        <a href = "?"><button style="background-color: rgb(49, 175, 49); color:white; border: none; padding: 15px 30px; font-weight: bold; font-size: 15px; position: absolute; right: 390px; bottom: 250px; border-radius: 5px; ">Создать аккаунт</button></a>
+        </div>
+        <p style=" width: 450px; position: absolute; right: 230px; bottom: 150px;"><a href="?" style="text-decoration: none; color: black; font-weight: bold; font-family: sans-serif; font-size: 14px;">Создать Страницу<a> знаменитости, музыкальной группы или компании.</p>
+        <div class = "languages">
+            <div><a href="?" style="text-decoration: none; color:rgb(139, 131, 131)">Русский</a></div>
+            <div><a href="?" style="text-decoration: none; color:rgb(139, 131, 131)">English (US)</a></div>
+            <div><a href="?" style="text-decoration: none; color:rgb(139, 131, 131)">Türkçe</a></div>
+            <div><a href="?" style="text-decoration: none; color:rgb(139, 131, 131)">Bahasa Indonesia</a></div>
+            <div><a href="/" style="text-decoration: none; color:rgb(139, 131, 131)">Қазақша</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">中文(简体)</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Deutsch</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">한국어</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Shqip</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Español</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Português (Brasil)</a></div>
+        </div>
+        <div class="things1">
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Регистрация</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Вход</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Messenger</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Facebook Lite</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Watch</a></div>
+            <div><a href="A" style="text-decoration: none; color:rgb(139, 131, 131)">Люди</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Страницы</a></div>
+            <div><a href="A" style="text-decoration: none; color:rgb(139, 131, 131)">Категории Страниц</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Места</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Игры</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Места</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Marketplace</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Facebook Pay</a></div>
+        </div>
+        <div class="things2">
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Группы</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Вакансии</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Oculus</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Portal</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Instagram</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Местные</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Благотворительные акции</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Услуги</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Центр информации о голосовании</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">О нас</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Создать рекламу</a></div>
+        </div>
+        <div class = "things3">
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Создать Страницу</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Разработчикам</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Вакансии</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Конфиденциальность</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Файлы cookie</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Выбор рекламы</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Условия использования</a></div>
+            <div><a href="a" style="text-decoration: none; color:rgb(139, 131, 131)">Справка</a></div>
+        </div>
+        
+    </body>
+</html>
