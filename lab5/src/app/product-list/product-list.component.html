@@ -1,0 +1,126 @@
+<h1>Products</h1>
+
+<button (click)="showHidePhone()" class="forclick1">Phones</button>
+<button (click)="showHideLaptop()" class="forclick2">Laptops</button>
+<button (click)="showHideCamera()" class="forclick3">Camera</button>
+<button (click)="showHideTv()" class="forclick4">Tvs</button>
+
+<div *ngIf="phoneShow" class="all">
+  <div *ngFor="let product of products">
+      
+        <h3>
+            <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+              {{ product.name }}
+            </a>
+        </h3>
+        <img src="{{product.image}}" width="200">
+          
+          <!-- <a [href]="'https://telegram.me/share/url?url=' + product.link " target="_blank">
+            <button>
+              Share 
+            </button>
+          </a> -->
+        <p id='numoflikes'>❤{{product.like}}</p> 
+        <p><strong>Price: </strong> {{product.price | currency }}</p>
+        <app-product-alerts
+        [product]="product"
+        (notify)="onNotify()">
+        </app-product-alerts>
+        <button id="addLike" (click)="likeIt(product.like)">Like</button>
+        <button (click) = "removeIt(product)">Remove</button>
+        
+  
+  </div>
+</div>
+
+
+<!-- <button (click)="showHideLaptop()" class="forclick2">Laptops</button> -->
+<div *ngIf="laptopShow" class="all">
+  <div *ngFor="let laptop of laptops">
+    
+      <h3>
+          <a [title]="laptop.name + ' details'" [routerLink]="['/laptops', laptop.id]">
+          {{ laptop.name }}
+          </a>
+      </h3>
+      <img src="{{laptop.image}}" width="200">
+        
+      <!-- <a [href]="'https://telegram.me/share/url?url=' + laptop.link " target="_blank">
+        <button>
+          Share 
+        </button>
+    </a> -->
+        <p id='numoflikes'>❤{{laptop.like}}</p>
+        <p><strong>Price: </strong> {{laptop.price | currency }}</p>
+        <app-product-alerts
+        [product]="laptop"
+        (notify)="onNotify()">
+        </app-product-alerts>
+      
+        <button id="addLike" (click)="likeIt(laptop.like)">Like</button>
+        <button (click) = "removeIt(laptop)">Remove</button>
+      
+  </div>
+</div>
+
+<!-- <button (click)="showHideCamera()" class="forclick3">Camera</button> -->
+<div *ngIf="cameraShow" class="all">
+  <div *ngFor="let camera of cameras">
+    
+      <h3>
+          <a [title]="camera.name + ' details'" [routerLink]="['/cameras', camera.id]">
+            {{ camera.name }}
+          </a>
+      </h3>
+      <img src="{{camera.image}}" width="200">
+        
+        <!-- <a [href]="'https://telegram.me/share/url?url=' + product.link " target="_blank">
+          <button>
+            Share 
+          </button>
+        </a> -->
+        <p id='numoflikes'>❤{{camera.like}}</p>
+      <p><strong>Price: </strong> {{camera.price | currency }}</p>
+      <app-product-alerts
+      [product]="camera"
+      (notify)="onNotify()">
+      </app-product-alerts>
+      <button id="addLike" (click)="likeIt(camera.like)">Like</button>
+      <button (click) = "removeIt(camera)">Remove</button>
+      
+  </div>
+</div>
+
+
+<!-- <button (click)="showHideTv()" class="forclick4">Tvs</button> -->
+<div *ngIf="tvShow" class="all">
+  <div *ngFor="let tv of tvs">
+      <h3>
+          <a [title]="tv.name + ' details'" [routerLink]="['/tv', tv.id]">
+            {{ tv.name }}
+          </a>
+      </h3>
+      <img src="{{tv.image}}" width="200">
+        
+        <!-- <a [href]="'https://telegram.me/share/url?url=' + product.link " target="_blank">
+          <button>
+            Share 
+          </button>
+        </a> -->
+        <p id='numoflikes'>❤{{tv.like}}</p>
+      <p><strong>Price: </strong> {{tv.price | currency }}</p>
+      <app-product-alerts
+      [product]="tv"
+      (notify)="onNotify()">
+      </app-product-alerts>
+      <button id="addLike" (click)="likeIt(tv.like)">Like</button>
+       <button (click) = "removeIt(tv)">Remove</button>
+      
+  </div>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

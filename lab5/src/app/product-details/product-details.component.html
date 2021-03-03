@@ -1,0 +1,263 @@
+<link  rel="stylesheet" type="text/css" href="product-details.component.css">
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3 id="name">{{ product.name }}</h3>
+  <!-- <div class='gallery'>
+    <img src="{{product.image}}">
+    <img src="{{product.image2}}">
+    <img src="{{product.image3}}">
+  </div> -->
+
+  <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="{{product.image}}" alt="im1">
+        </div>
+        <div class="slide">
+          <img src="{{product.image2}}" alt="im2">
+        </div>
+        <div class="slide">
+          <img src="{{product.image3}}" alt="im3">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+         
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+  <h3>Price: {{ product.price | currency }}</h3>
+  <p><strong id="description"> Description: </strong> {{ product.description }}
+    <br>
+    <strong> Rating: </strong>{{product.rating}}
+  </p>
+
+
+  <button (click)="addToCart(product)">Buy</button>
+  <a [href]="'https://telegram.me/share/url?url=' + product.link " target="_blank">
+    <button>
+      Share 
+    </button>
+  </a>
+
+</div>
+
+<!-- Laptop -->
+
+<div *ngIf="laptop">
+  <h3 id="name">{{ laptop.name }}</h3>
+  <!-- <div class='gallery'>
+    <img src="{{product.image}}">
+    <img src="{{product.image2}}">
+    <img src="{{product.image3}}">
+  </div> -->
+
+  <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="{{laptop.image}}" alt="im1">
+        </div>
+        <div class="slide">
+          <img src="{{laptop.image2}}" alt="im2">
+        </div>
+        <div class="slide">
+          <img src="{{laptop.image3}}" alt="im3">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+         
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+  <h3>Price: {{ laptop.price | currency }}</h3>
+  <p><strong id="description"> Description: </strong> {{ laptop.description }}
+    <br>
+    <strong> Rating: </strong>{{laptop.rating}}
+  </p>
+
+
+  <button (click)="addToCart(laptop)">Buy</button>
+  <a [href]="'https://telegram.me/share/url?url=' + product.link " target="_blank">
+    <button>
+      Share 
+    </button>
+  </a>
+
+</div>
+
+<!-- Cameraaa -->
+<div *ngIf="camera">
+  <h3 id="name">{{ camera.name }}</h3>
+  <!-- <div class='gallery'>
+    <img src="{{product.image}}">
+    <img src="{{product.image2}}">
+    <img src="{{product.image3}}">
+  </div> -->
+
+  <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="{{camera.image}}" alt="im1">
+        </div>
+        <div class="slide">
+          <img src="{{camera.image2}}" alt="im2">
+        </div>
+        <div class="slide">
+          <img src="{{camera.image3}}" alt="im3">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+         
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+  <h3>Price: {{ camera.price | currency }}</h3>
+  <p><strong id="description"> Description: </strong> {{ camera.description }}
+    <br>
+    <strong> Rating: </strong>{{camera.rating}}
+  </p>
+
+
+  <button (click)="addToCart(camera)">Buy</button>
+  <a [href]="'https://telegram.me/share/url?url=' + product.link " target="_blank">
+    <button>
+      Share 
+    </button>
+  </a>
+
+</div>
+
+
+<!-- TVVVVV -->
+<div *ngIf="tv">
+  <h3 id="name">{{ tv.name }}</h3>
+  <!-- <div class='gallery'>
+    <img src="{{product.image}}">
+    <img src="{{product.image2}}">
+    <img src="{{product.image3}}">
+  </div> -->
+
+  <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="{{tv.image}}" alt="im1">
+        </div>
+        <div class="slide">
+          <img src="{{tv.image2}}" alt="im2">
+        </div>
+        <div class="slide">
+          <img src="{{tv.image3}}" alt="im3">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+         
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+  <h3>Price: {{ tv.price | currency }}</h3>
+  <p><strong id="description"> Description: </strong> {{ tv.description }}
+    <br>
+    <strong> Rating: </strong>{{tv.rating}}
+  </p>
+
+
+  <button (click)="addToCart(tv)">Buy</button>
+  <a [href]="'https://telegram.me/share/url?url=' + product.link " target="_blank">
+    <button>
+      Share 
+    </button>
+  </a>
+
+</div>
